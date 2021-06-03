@@ -1,0 +1,163 @@
+body{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+ul{
+    padding: 0px;
+    margin: 0px;
+}
+/* header 1 inicio*/
+.header1{
+    background: #252525;
+    border-bottom: 3px groove #efefef;
+}
+.logo img{
+    max-height: 70px;
+    width: 300px;
+    padding: 10px;
+}
+.social ul{
+    margin: 20px auto;
+    text-align: right;
+}
+.social ul li{
+    display: inline-block;
+    padding-right: 10px;
+}
+.social ul li:hover{
+    text-shadow: 0px 0px 10px #aaa;
+}
+/* header 1 fim */
+
+/* header 2 inicio */
+.header2{
+    background: white;
+    border-bottom: 3px groove #efefef;
+}
+.header2 .nav{
+    height: 100%;
+}
+.header2 .nav a{
+    color:#232323 !important;
+    padding:15px;
+    text-align: center;
+    border-radius: 0px;
+}
+.header2 .nav .active{
+    background: #efefef;
+}
+.header2 .nav a:hover{
+    background: #efefef;
+}
+/* dropdown inicio*/
+.dropdown{
+    align-content: center;
+    margin:auto 0;
+}
+.dropdown .btn{
+    background: #353535;
+    text-decoration: none;
+}
+.dropdown-menu{
+    background: #353535;
+}
+.dropdown a{
+    color: white;
+}
+.dropdown .active{
+    background: #cfcfcf !important;
+}
+.dropdown a:hover{
+    color: #353535;
+    background: #cfcfcf;
+}
+/* dropdown fim */
+
+/*  busca inicio */
+.header2 .busca{
+    margin: 10px auto;
+    text-align: right;
+}
+.busca input{
+    width: 50%;
+    padding:5px 30px 5px 10px;
+    background-image:url(imgs/searchicon.png);
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: 95%;
+}
+
+/* busca fim */
+
+/* header 2 fim */
+
+/*  main inicio */
+
+/* carousel */
+.carousel1{
+    max-width: 100%;
+    max-height: 500px;
+    margin: 20px auto;
+}
+.carousel-item img{
+    max-width: 800px;
+    height: 380px;
+    margin: 0 auto;
+    border:5px groove #efefef;
+}
+.carousel-caption{
+    background: rgba(153, 153, 153, 0.158);
+    color:#232323;
+}
+.carousel-caption:hover{
+    background: rgba(204, 204, 204, 0.699);
+}
+
+/* footer */
+footer{
+    background: #232323;
+    margin:0 auto;
+}
+.footer{
+    color:white;
+    padding:10px;
+}
+@media screen and ( max-width:450px){
+    .carousel-item img{
+        height: 300px;
+    }
+}
+@media screen and ( max-width:575px){
+    .header2 .busca{
+        margin-right: 0px !important;
+        text-align: right;
+    }
+    .busca input{
+        width: 100%;
+    }
+    .carousel-item img{
+        max-height: 400px;
+    }
+}
+@media screen and ( max-width:768px) {
+    .menu-nav{
+        border-bottom:3px groove #efefef;
+    }
+    .carousel-caption{
+        background: rgba(204, 204, 204, 0.699);
+        color:#232323;
+    }
+    .header2 .busca{
+        margin: 10px auto;
+        text-align: center;
+    }
+    .busca input{
+        width: 70%;
+    }
+}
+
+@media screen and ( max-width:950px) {
+    .header2 .busca{
+        justify-items: center;
+    }
+}
