@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/464c89cc8d.js" crossorigin="anonymous"></script>  
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="index_style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/logo.png">
+    <title>Epic Games</title>
+
+
+
+</head>
+<body>
+    <!-- ----------------- Cabecalho Inicio ------------------------>
+    <header class="container-fluid">
+      <div class="row header">
+            <!-- Logo -->
+            <div class="col-4 logo">
+              <img src="assets/logo.png" class="logo1" alt="logo">
+            </div>
+            <!-- Opcoes -->
+            <div class="col-8 menu-area">
+              <nav class="navbar navbar-expand-lg bg-dark">
+                <div class="container-fluid menu-nav">
+                  <a class="navbar-brand" href="#"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Destaques</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Lançamentos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Plataformas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Publishers</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="" id="srcf">
+                      <input class="form-control me-2" type="text" id="search_text" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="button" id="sbtn">Buscar Jogos</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+            </div>
+      </div>
+    </header>
+    <!-- ----------------- Cabecalho Fim --------------------------->
+
+
+
+    <!-- ------------------------- Main  --------------------------->
+
+    <main class="container-fluid main">
+
+        <div class="row" id="background">
+            <img src="assets/background3.png" alt="" height="200">
+        </div>
+
+        <div class="row" id="search-result">
+            
+          <!-- Get Cards From API -->
+
+        </div>
+
+
+
+        <div class="row" id="background2">
+            <img src="assets/background4.jpg" alt="" height="300">
+        </div>
+
+    </main>
+
+    <!-- ------------------------ Main Fim --------------------------->
+
+
+    <!-- ---------------------- Footer  ----------------------------->
+    <footer class="container-fluid footer">
+        <div class="row">
+            
+            <div class="col-12 col-sm-12 col-md-8">
+                <p>Copyright 2022 - Disciplina de Desenvolvimento de Interfaces Web
+                </br> Rafael Guimarães Fernandes - Matricula 744467 - Ciência da Computação - PUC Minas
+                </p>
+            </div>  
+            <div class="col-12 col-sm-12 col-md-4">
+                <img class="logo1" src="assets/logo.png" alt="logo">
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- ------------------ Footer fim -------------------------->
+
+
+        <!-- BootsTrap Dependencias -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script>
+
+      var url_string = window.location.href
+      let url = new URL(url_string);
+      let gameName = url.searchParams.get("name")
+      
+      search_game(gameName)
+
+    </script>
+
+</body>
+</html>
