@@ -3,8 +3,12 @@ html, body {
     overflow-x: hidden;
 }
 
-/* Definicoes Cabecalho inicio*/
 
+/* ----------------------------------------------------------------------------------------- */
+/* --------------------------------------- Main Page CSS --------------------------------- */
+/* ----------------------------------------------------------------------------------------- */
+
+/* -------------------------------------- Header*/
 .header{
     background-color: rgb(24, 24, 24);
     max-height: 100px;
@@ -65,16 +69,12 @@ html, body {
     color: white;
 }
 
-
-/* ------------------------------- Definicoes Cabecalho fim*/
-
-/* ---------------------------------- Main Area*/
+/* -----------------------------------------Main  */
 .main{
     padding: 0px;
     margin: 0px;
 }
 
-/* -------------------------------- Main Area Fim*/
 
 /* ------------------------------- Destaques*/
 .destaques{
@@ -102,10 +102,6 @@ html, body {
     background-color: rgba(78, 78, 78 , 40%) !important;
 }
 
-/* .carousel-item{
-    vertical-align: top;
-    padding: 10px;
-} */
 .carousel-item img{
     vertical-align: center;
     padding:0px;
@@ -126,8 +122,6 @@ html, body {
     font-size: 16pt;
 }
 
-/* ---------------------------------- Destaques Fim*/
-
 /* ---------------------------------- Lancamentos Menu*/
 
 .lancamentos-menu{
@@ -145,8 +139,6 @@ html, body {
     padding: 10px;
     margin-right: 20px;
 }
-
-/* ---------------------------------- Lancamentos Menu fim*/
 
 /* ---------------------------------- Cards*/
 
@@ -194,8 +186,6 @@ html, body {
     height: 200px;
 }
 
-/* ---------------------------------- Cards Fim*/
-
 /* ---------------------------------- Plataformas*/
 .plataformas{
     background-image: url(./assets/background2.jpg);
@@ -237,12 +227,6 @@ html, body {
 }
 
 
-
-
-/* ---------------------------------- Plataformas fim*/
-
-/* Definicoes Main fim*/
-
 /* --------------------------------- Footer*/
 .footer{
     background-color: rgb(28, 28, 28);
@@ -252,7 +236,6 @@ html, body {
     color: white;
     padding: 20px;
 }
-/* --------------------------------- Footer fim*/
 
 /* --------------------------------- Media Queries*/
 @media screen and (max-width: 992px){
@@ -328,7 +311,7 @@ html, body {
 }
 
 /* ----------------------------------------------------------------------------------------- */
-/* --------------------------------------- Detalhes Page CSS --------------------------------- */
+/* --------------------------------------- Detalhes Page CSS ------------------------------- */
 /* ----------------------------------------------------------------------------------------- */
 
 /* ------------------------------- Background1*/
