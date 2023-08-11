@@ -7,19 +7,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/464c89cc8d.js" crossorigin="anonymous"></script>  
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="./assets/logo.png">
     <title>Epic Games</title>
 </head>
 <body>
-    <!-- ----------------- Cabecalho Inicio ------------------------>
+    <!-- header -->
     <header class="container-fluid">
       <div class="row header">
             <!-- Logo -->
             <div class="col-4 logo">
               <img src="assets/logo.png" class="logo1" alt="logo">
             </div>
-            <!-- Opcoes -->
+            <!-- menu -->
             <div class="col-8 menu-area">
               <nav class="navbar navbar-expand-lg bg-dark">
                 <div class="container-fluid menu-nav">
@@ -42,9 +43,9 @@
                         <a class="nav-link" href="./index.html">Publishers</a>
                       </li>
                     </ul>
-                    <form class="d-flex" role="" id="srcf">
+                    <form class="d-flex" id="srcf">
                       <input class="form-control me-2" type="text" id="search_text" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="button" id="sbtn">Buscar Jogos</button>
+                      <button class="btn btn-outline-success" type="submit" id="sbtn">Buscar Jogos</button>
                     </form>
                   </div>
                 </div>
@@ -52,16 +53,12 @@
             </div>
       </div>
     </header>
-    <!-- ----------------- Cabecalho Fim ------------------------->
 
-    <!-- ------------------ Principal Inicio---------------------->
-        
+    <!-- main -->
     <main class="container-fluid main">
-
-      <!--------------------Carousel / Descriçao---------------->
+      <!-- carousel -->
       <div class="row destaques">
         <div class="col-md-8 offset-md-2 destaques-area">
-
             <h1>Destaques</h1>
             <div class="row">
               <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
@@ -71,9 +68,7 @@
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner" id="carousel-inner">
-
-                  <!-- Get From RAWG API -->
-
+                  <!-- Carousel items -->
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -87,20 +82,17 @@
             </div>
         </div> 
       </div>
+      <!-- release -->
+      <div class="row release">
+        <div class="col-12 release-area">
 
-      <!-- Lancamentos -->
-      <div class="row lancamentos">
-
-        <!-- Lancamentos Area-->
-        <div class="col-12 lancamentos-area">
-
-          <!-- Lancamentos Menu-->
-          <div class="row lancamentos-menu">
-            <!-- titulo -->
+          <!-- release menu-->
+          <div class="row release-menu">
+            <!-- title -->
             <div class="col-md-6 titulo">
               <h1>Lançamentos</h1>
             </div>
-            <!-- dropdown de ordem -->
+            <!-- dropdown area -->
             <div class="dropdown col-md-2 ordem">
               <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Ordenar por
@@ -112,7 +104,7 @@
                 <li><a class="dropdown-item" href="#">Price</a></li>
               </ul>
             </div>
-            <!-- dropdowns de genero-->
+            <!-- -->
             <div class="dropdown col-md-2 genero">
               <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Genero: Todos
@@ -125,65 +117,44 @@
               </ul>
             </div>
           </div>
-          <!-- Lancamentos Menu fim-->
-
-          <!-- Lancamentos  Card-->
-          <div class="row lancamentos-cards" id="lancamentos-cards">
-
-            <!-- GET from RAWG API -->
-
-
+          <!-- release Cards -->
+          <div class="row release-cards" id="release-cards">
+            <!-- card items -->
           </div>
-          <!-- Lancamentos  Card fim -->
         </div>
-        <!-- Lancamentos Area fim-->
       </div>
-      <!-- Lancamentos fim -->
-
-      <!-- Plataformas -->
-      <div class="row plataformas">
-        <div class="col-lg-8 offset-lg-2 plataformas-area">
-          <div class="row plataformas-menu">
+      <!-- platforms -->
+      <div class="row platforms">
+        <div class="col-lg-8 offset-lg-2 platforms-area">
+          <div class="row platforms-menu">
             <h1>Plataformas</h1>
           </div>
-          <div class="row plataformas-cards" id="plataformas-cards">
-
-            <!-- GET from RAWG API -->
-
+          <div class="row platforms-cards" id="platforms-cards">
+            <!-- card items -->
           </div>
         </div>
-
       </div>
-      <!-- Plataformas fim -->
     </main>
-      <!-- ------------------ Principal Fim -------------------------->
 
-      <!-- ------------------ Footer inicio -------------------------->
+    <!-- footer -->
     <footer class="container-fluid footer">
         <div class="row">
-          
           <div class="col-12 col-sm-12 col-md-8">
-              <p>Copyright 2022 - Disciplina de Desenvolvimento de Interfaces Web
-              </br> Rafael Guimarães Fernandes - Matricula 744467 - Ciência da Computação - PUC Minas
+              <p>Copyright 2022 -Projeto da disciplina Desenvolvimento de Interfaces Web
+                </br> Rafael Fernandes - Ciência da Computação - PUC Minas
               </p>
           </div>  
           <div class="col-12 col-sm-12 col-md-4">
               <img class="logo1" src="assets/logo.png" alt="logo">
           </div>
-
         </div>
     </footer>
-    <!-- ------------------ Footer fim -------------------------->
 
-    <!-- BootsTrap Dependencias -->
+    <!-- BootsTrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <!-- Get Data -->
     <script>
-      
-      document.body.onload = () => {
-          getApiDataMain()
-          
-      }
+      getApiDataMain()
     </script>
 </body>
 </html>

@@ -8,20 +8,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/464c89cc8d.js" crossorigin="anonymous"></script>  
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="./assets/logo.png">
     <title>Epic Games</title>
 
 </head>
 <body>
-    <!-- ----------------- Cabecalho Inicio ------------------------>
+    <!-- header -->
     <header class="container-fluid">
       <div class="row header">
             <!-- Logo -->
             <div class="col-4 logo">
               <img src="assets/logo.png" class="logo1" alt="logo">
             </div>
-            <!-- Opcoes -->
+            <!-- options -->
             <div class="col-8 menu-area">
               <nav class="navbar navbar-expand-lg bg-dark">
                 <div class="container-fluid menu-nav">
@@ -44,9 +45,9 @@
                         <a class="nav-link" href="./index.html">Publishers</a>
                       </li>
                     </ul>
-                    <form class="d-flex" role="input" id="srcf">
+                    <form class="d-flex" id="srcf">
                       <input class="form-control me-2" type="text" id="search_text" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="button" id="sbtn">Buscar Jogos</button>
+                      <button class="btn btn-outline-success" type="submit" id="sbtn">Buscar Jogos</button>
                     </form>
                   </div>
                 </div>
@@ -54,35 +55,19 @@
             </div>
       </div>
     </header>
-    <!-- ----------------- Cabecalho Fim --------------------------->
 
-    <!-- -------------------- Principal ---------------------------->
-
+    <!-- main -->
     <main class="container-fluid main">
-        <!-- background-->
-        <div class="row" id="background">
-
-            <!-- Get background from API -->
-
-        </div>
-
-        <!-- row detalhes-->
-        <div class="row">
+        <!-- detalhes -->
+        <div class="row detalhes">
           <div class="col-12">
-            <!-- row img / sobre-->
+            <!-- img / sobre -->
             <div class="row detalhes-principal">
-
               <div class="col-md-6 detalhes-sobre" id="detalhes">
-                
-                <!-- Get title from API -->
-                <!-- Get sobre from API -->
-                <h1>${}</h1>
-                <p>${}</p>
-
+                <!-- title -->
+                <!-- about -->
               </div>
-
               <div class="col-md-6 detalhes-image" id="detalhes-image">
-
                 <!-- Carousel -->
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                   <div class="carousel-indicators">
@@ -91,9 +76,7 @@
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                   </div>
                   <div class="carousel-inner" id="carousel-inner1">
-
-                    <!-- Get From RAWG API -->
-
+                    <!-- Carousel items -->
                   </div>
                   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -103,60 +86,40 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                   </button>
+                </div>
               </div>
-                <!-- Carousel Fim -->
-
-              </div>
-
             </div>
 
             <!-- row info -->
             <div class="row info">
-
               <div class="col-sm-6 col-md-3 detalhes-info1 " id="info1">
-
-                <!-- Get info1 from API -->
-
+                <!-- info1 -->
               </div>
               <div class="col-sm-6 col-md-3 detalhes-info2" id="info2">
-
-
-
+                <!-- info2 -->
               </div>
-
               <div class="col-md-6 detalhes-stores" id="stores">
-
-                <!-- Get review from API -->
-
+                <!-- stores -->
               </div>
 
             </div>
 
           </div>
         </div>
-        <!-- row detalhes fim -->
-
-        <!-- row more games title-->
+        <!-- more games title-->
         <div class="row more-games-title">
             
           <h1>More Games</h1>
 
         </div>
 
-        <!-- row more games cards-->
+        <!-- more games cards-->
         <div class="row more-games" id="more_games">
-
-          <!-- Get from API -->
-        
+          <!-- card items -->
         </div>
-        <!-- row games like fim-->
-
     </main>
 
-
-    <!-- ------------------ Principal Fim -------------------------->
-
-    <!-- ---------------------- Footer  ----------------------------->
+    <!-- Footer -->
     <footer class="container-fluid footer">
         <div class="row">
           
@@ -171,16 +134,11 @@
 
         </div>
     </footer>
-
-    <!-- ------------------ Footer fim -------------------------->
     
     <!-- BootsTrap Dependencias -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     
-
-    <script src="script.js"></script>
     <script>
-
         var url_string = window.location.href
         let url = new URL(url_string);
         let idgame = url.searchParams.get("id")

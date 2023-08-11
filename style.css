@@ -2,8 +2,6 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
-
-
 /* ----------------------------------------------------------------------------------------- */
 /* --------------------------------------- Main Page CSS --------------------------------- */
 /* ----------------------------------------------------------------------------------------- */
@@ -20,18 +18,15 @@ html, body {
     height: 100px;
     padding: 10px;
 }
-
 .navbar-nav .nav-item{
     padding: 5px;
     margin: 0px;
 }
-
 .menu-area{
     text-align: right;
     padding: 20px;
     z-index: 99;
 }
-
 .navbar{
     background-color: rgb(24, 24, 24)!important;
     text-align: right;
@@ -40,7 +35,6 @@ html, body {
     color: white!important;
     background-color: rgb(44, 44, 44);
 }
-
 .menu-area a{
     color: rgb(190, 190, 190);
 }
@@ -60,7 +54,6 @@ html, body {
     color: black;
     border-color: black;
 }
-
 .menu-area .navbar-toggler-icon{
     background-color: rgb(95, 91, 91);
 }
@@ -73,8 +66,8 @@ html, body {
 .main{
     padding: 0px;
     margin: 0px;
+    background-color: rgb(35,35,38);
 }
-
 
 /* ------------------------------- Destaques*/
 .destaques{
@@ -84,13 +77,11 @@ html, body {
     color: white;
     text-align: center;
 }
-
 .destaques .btn{
     background-color: white;
     color: rgb(95, 91, 91);
     border-color: rgb(95, 91, 91);
 }
-
 .destaques-area {    
     background-color: rgba(54, 51, 51 , 30%);
     border-radius: 10px;
@@ -99,15 +90,18 @@ html, body {
     padding: 10px;
 }
 .destaques-area:hover{
-    background-color: rgba(78, 78, 78 , 40%) !important;
+    background-color: rgba(78, 78, 78 , 67%) !important;
 }
-
-.carousel-item img{
-    vertical-align: center;
-    padding:0px;
-    width: 480px;
-    height:300px ;
-    border: solid 5px rgba(120,120,120,50%);
+.carousel-img{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* border: solid 5px rgba(120,120,120,50%); */
+}
+.carousel-img img{
+    width: 50%;
+    height: 100%;
 }
 .carousel-item p{
     max-width: 40%;
@@ -117,45 +111,40 @@ html, body {
     font-size: 12pt;
     color: white;
 }
-
 .carousel-title{
     font-size: 16pt;
 }
 
-/* ---------------------------------- Lancamentos Menu*/
-
-.lancamentos-menu{
+/* ---------------------------------- release Menu*/
+.release-menu{
     background-color: rgb(24,24,24);
     color: white;
     padding: 10px;
     text-align: center;
 }
-.lancamentos-menu .dropdown{
+.release-menu .dropdown{
     padding: 5px;
     margin: 0px;
 }
-.lancamentos-menu .dropdown button{
+.release-menu .dropdown button{
     min-width: 200px;
     padding: 10px;
     margin-right: 20px;
 }
 
 /* ---------------------------------- Cards*/
-
-.lancamentos-cards{
+.release-cards{
     margin: 0 auto;
     border-top: solid 5px rgb( 50, 50, 50);
 }
-
 .card-game {
-    background-color: rgb(28,28,28);
+    background-color: rgb(35,35,38);
     padding: 10px;
     text-align: center;
 }
 .card-game h1{
     font-size: 1.3em;
 }
-
 .card-game a{
     background-color: rgb(90,90,90);
     text-align: center;
@@ -166,78 +155,69 @@ html, body {
     color: rgb(28, 28, 28) !important;
     border-color: rgb(150,150,150) !important;
 }
-
 .card-game .card p{
     font-size: 13pt;
     text-align: left;
 }
 .card-game .card {
     padding: 10px;
-    background-image: radial-gradient(ellipse, rgba(50,50,50,60%) , rgba(20,20,20,100%));
+    background-image: radial-gradient(ellipse, rgba(50,50,50,90%) , rgba(20,20,20,100%));
     height: 490px;
     color: white;
 }   
 .card-game .card:hover{
     background-image: radial-gradient(ellipse, rgba(50,50,50,80%) , rgba(12,12,12,100%));
 }   
-
 .card-game .card img{
     width: 100%;
     height: 200px;
 }
 
-/* ---------------------------------- Plataformas*/
-.plataformas{
+/* ---------------------------------- Platforms */
+.platforms{
     background-image: url(./assets/background2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 10px;
     border-top: solid 5px rgb( 50, 50, 50) ;
 }
-
-.plataformas-menu{
+.platforms-menu{
     color: white;
     text-align: center;
 }
-
-.card-plataforma .card{
+.card-platform .card{
     margin: 10px;
     background-image: radial-gradient(ellipse, rgba(120,120,120,100%) , rgba(50,50,50,100%));
     text-align: center;
     color: white;
 }
-.card-plataforma .card:hover{
+.card-platform .card:hover{
     background-image: radial-gradient(ellipse, rgba(120,120,120,80%) , rgba(30,30,30,100%));
 }
-
-
-.card-plataforma .card img{
+.card-platform .card img{
     height: 160px;
 }
-
-.card-plataforma .btn{
+.card-platform .btn{
     background-color: rgb(90,90,90);
     text-align: center;
     border-color: rgb(150,150,150);
 }
-.card-plataforma .btn:hover{
+.card-platform .btn:hover{
     background-color: rgb(290,290,290) !important;
     color: rgb(28, 28, 28) !important;
     border-color: rgb(150,150,150) !important;
 }
 
-
 /* --------------------------------- Footer*/
 .footer{
-    background-color: rgb(28, 28, 28);
+    background-color: rgb(24, 24, 24);
     text-align: center; 
 }
 .footer p{
     color: white;
     padding: 20px;
 }
-
-/* --------------------------------- Media Queries*/
+/* --------------------------------- Media Queries */
 @media screen and (max-width: 992px){
     .carousel-item{
         vertical-align:auto;
@@ -256,26 +236,19 @@ html, body {
         color: white;
         
     }
- 
 }
-
 @media screen and (max-width: 500px){
-    
     .carousel-item img{
         width: 350px;
         height:230px ;
     }
-
     .menu-area{
         margin-left: 0px;
     }
-
-    .card-plataforma .card img{
+    .card-platform .card img{
         width: 100%;
     }
-
 }
-
 @media screen and (max-width: 1100px)
 {
     .destaques{
@@ -283,89 +256,68 @@ html, body {
         background-repeat: no-repeat;
         background-size:cover ;
     }
-    .plataformas{
-        background-image: url(./assets/background5.jpg);
+    .platforms{
+        background-image: url(./assets/background5.png);
         background-repeat: no-repeat;
         background-size: cover;
     }
-
 }
-
 @media screen and (max-width: 1020px)
 {
     .more-games .card-game:last-child{
         display: none;
     }
 }
-
-
-
 /* ----------------------------------------------------------------------------------------- */
 /* --------------------------------------- Search Page CSS --------------------------------- */
 /* ----------------------------------------------------------------------------------------- */
-
 #search-result {
-    background-color: rgb(28, 28, 28);
     min-height: 600px;
     padding: 10px;
 }
-
 /* ----------------------------------------------------------------------------------------- */
 /* --------------------------------------- Detalhes Page CSS ------------------------------- */
 /* ----------------------------------------------------------------------------------------- */
 
 /* ------------------------------- Background1*/
-
-
 #background img{
     max-height: 800px;
 }
-
-/* ------------------------------- Background1 fim*/
-
-
 /* ------------------------------- detalhes */
+.detalhes{
+    background-color: rgb(35,35,38);
+}
 .detalhes-principal{
     padding: 15px;
-    background-color: rgb(28, 28, 28);
 }
-
 .detalhes-sobre{
     padding: 10px;
     color: white;
     text-align: left;
     font-size: 1em;
 }
-
 .detalhes-image img{
     padding: 10px;
     width: 100%;
     height: 100%;
 }
-
 .info{
     padding: 20px;
-    background-color: rgb(28, 28, 28);
     color: white;
     font-size: 1em;
 }
-
 .detalhes-stores{
     text-align: center;
-
 }
-
-/* ------------------------------- detalhes fim */
 
 /* ------------------------------- More Games Cards*/
 
 .more-games-title{
     color: white;
-    background-color: rgb(68, 68, 68);
+    background-color: rgb(24, 24, 24);
     text-align: center;
     padding: 15px;
 }
-
 .more-games{
     background-image: url("assets/background5.png");
     background-repeat: no-repeat;
@@ -374,12 +326,10 @@ html, body {
     border-top: solid 5px rgb(90, 90, 90);
     justify-content: center;
 }
-
 .more-games .Mcard-game{
     padding: 20px;
     text-align: center;
 }
-
 .more-games .Mcard-game .card{
     padding: 10px;
     margin: 0px;
@@ -389,7 +339,6 @@ html, body {
     width: 350px;
     height: 450px;
 }
-
 .more-games .Mcard-game .card:hover{
     padding: 10px;
     /* background-color: rgba(150, 150, 150,90%); */
@@ -397,7 +346,6 @@ html, body {
     border-color: rgba(0,0,0,0%);
 
 }
-
 .more-games .Mcard-game .card h1{
     text-align: center;
     font-size: 1.3em;
@@ -413,6 +361,3 @@ html, body {
     background-color: rgba(60,60,60,50%);
     border-color: white;
 }
-
-
-/* ------------------------------- More Game Cards fim*/
